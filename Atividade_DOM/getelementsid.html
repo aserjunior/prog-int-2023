@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Titulo para testar o getelements</h1>
+    <p id="texto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quos explicabo similique adipisci earum doloremque dolor laboriosam, iste nisi itaque minima at! Magnam, debitis! Perspiciatis dolorum soluta mollitia itaque iste.
+    </p>
+    <button onclick="mudarCor('blue')">Mude a cor do texto para azul</button>
+    <button onclick="mudarCor('green')">Mude a cor do texto para verde</button>
+</body>
+<script>
+    function mudarCor(cor) {
+        var texto = document.getElementById('texto');
+        texto.style.color = cor
+    }
+</script>
+</html>

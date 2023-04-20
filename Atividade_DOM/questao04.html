@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Diferenças entre <strong>innerHTML</strong> e <strong>textContent</strong></h1>
+    <p id="exemplo">Texto utilizado para fazer o teste do innerHTML e textContent</p>
+    <p>
+        textContent: Retorna o texto escolhido com formatações, mas sem os conteudos presentes no html<br>
+        innerHTML: Retorna "tudo", basicamente traz o texto com formatações e com os conteudos do html<br>
+    </p>
+    <button onclick="getInnerHTML()">innerHTML</button>
+    <button onclick="getTextContent()">textContent</button>
+</body>
+<script>
+    function getInnerHTML() {
+        alert(document.getElementById("exemplo").innerHTML)
+    }
+
+    function getTextContent() {
+        alert(document.getElementById("exemplo").textContent)
+    }
+</script>
+</html>

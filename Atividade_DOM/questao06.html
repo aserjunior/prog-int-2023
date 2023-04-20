@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+<body>
+    <p id="texto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+        Exercitationem, quo, iste quae omnis odit maiores aliquid tenetur libero architecto pariatur voluptatum sequi,<br>
+        minima impedit perferendis ipsum eveniet voluptatem ad repellat!
+    </p>
+    <button onclick="mudarCor()">Alterar cor</button>
+    <button onclick="retornarAnterior()">Retornar ao normal</button>
+</body>
+<script>
+    function mudarCor() {
+        var p = document.getElementById('texto')
+        document.body.style.background = 'black'
+
+        p.style.color = 'white'
+    }
+
+    function retornarAnterior() {
+        var p = document.getElementById('texto')
+        document.body.style.background = 'white'
+
+        p.style.color = 'black'
+    }
+</script>
+</html>

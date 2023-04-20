@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo pra teste do getelementsbytag</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quaerat assumenda velit amet nostrum debitis saepe fugiat eos, illo ullam ipsum! Vero deleniti quaerat, eveniet possimus dolorum veritatis deserunt facilis.
+    </p>
+    <h2>Outro titulo</h2>
+    <h2>Mais um titulo</h2>
+    <button onclick="mudarCor('green')">Clique aqui para contar o numero de h2</button>
+</body>
+<script>
+    function mudarCor(cor){
+        var h2 = document.getElementsByTagName("h2");
+        const num = h2.length
+        alert(`Existem ${num} h2`)
+    }
+</script>
+</html>
